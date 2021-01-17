@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="591.0" prefWidth="644.0" stylesheets="@hojaEstilo3.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectosorteo.vista.VerParticipantesController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tablaPartipantes" layoutX="-119.0" layoutY="-181.0" prefHeight="341.0" prefWidth="319.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="columnaNombre" prefWidth="128.0" text="Nombre" />
+                  <TableColumn fx:id="columnaEmail" prefWidth="190.0" text="Email" />
+                  <TableColumn fx:id="columnaTelefono" prefWidth="159.0" text="Telefono" />
+                  <TableColumn fx:id="columnaDni" prefWidth="166.0" text="DNI" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" BorderPane.alignment="CENTER">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#handleDelete" prefHeight="26.0" text="Eliminar Participante">
+               <tooltip>
+                  <Tooltip text="Para eliminar ,clickea en un participante y luego en este botón" />
+               </tooltip></Button>
+          <Button mnemonicParsing="false" onAction="#handleAnadir" prefHeight="26.0" prefWidth="264.0" text="Anadir Participante" />
+        </buttons>
+         <padding>
+            <Insets right="50.0" />
+         </padding>
+      </ButtonBar>
+   </bottom>
+</BorderPane>
