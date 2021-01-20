@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="btnSuma">Suma</string>
+    <string name="btnResta">Restar</string>
+    <string name="btnMultiplicar">Multiplicar</string>
+    <string name="btnDividir">Dividir</string>
+    <string name="textoIntroducir1">Escribe un operador</string>
+    <string name="TextoIntroducir2">Escribe el segundo operador</string>
+
+</resources>
